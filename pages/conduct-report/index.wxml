@@ -1,0 +1,114 @@
+<view class="report_container">
+  <view class="report_tab">
+    <view class="report_group">
+      <view class="btn">日报</view>
+      <view class="btn">周报</view>
+      <view class="btn active">月报</view>
+    </view>
+    <view class="report_time">
+      <picker class='time-picker' start="{{startRange}}" end="{{endRange}}" header-text="请选择时间" mode="date" bindchange="bindDateChange" value="{{startDate}}">
+        <text>{{startDate}}</text>
+      </picker>
+      <image src="../../images/icon-right.png" class="icon"></image>
+    </view>
+  </view>
+
+  <view class="header_container">
+    <view class="header_module">
+      <view class="header_title">汇总</view>
+      <view class="header_list">
+        <view class="header_item border_bottom">
+          <view class="header_label">充值金额(元)</view>
+          <view class="header_count">283476.1</view>
+        </view>
+        <view class="header_item border_left border_bottom">
+          <view class="header_label">单笔均价(元)</view>
+          <view class="header_count">234223.33</view>
+        </view>
+        <view class="header_item border_bottom">
+          <view class="header_label">总人数</view>
+          <view class="header_count">3467</view>
+        </view>
+        <view class="header_item border_left border_bottom">
+          <view class="header_label">总笔数</view>
+          <view class="header_count">345343</view>
+        </view>
+        <view class="header_item ">
+          <view class="header_label">退款金额(元)</view>
+          <view class="header_count">0</view>
+        </view>
+        <view class="header_item border_left border_bottom">
+          <view class="header_label">退款笔数</view>
+          <view class="header_count">0</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="header_container">
+    <view class="header_module">
+      <view class="header_title">
+        收入分析
+      </view>
+      <view class="header_list">
+        <ec-canvas wx:if="{{deviceOrientation}}" force-use-old-canvas="{{false}}"
+          style="height: {{deviceStyle.height}};width:{{deviceStyle.width}};" id="mychart-first"
+          canvas-id="mychart-first" ec="{{ reportEchart }}"></ec-canvas>
+        <ec-canvas wx:else force-use-old-canvas="{{false}}"
+          style="height: {{deviceStyle.height}};width:{{deviceStyle.width}};" id="mychart-first"
+          canvas-id="mychart-first" ec="{{ reportEchart }}"></ec-canvas>
+      </view>
+    </view>
+  </view>
+  <view class="header_container">
+    <view class="header_module">
+      <view class="header_title">收入趋势</view>
+      <view class="header_list">
+        <ec-canvas wx:if="{{deviceOrientation}}" force-use-old-canvas="{{false}}"
+          style="height: {{deviceStyle.height}};width:{{deviceStyle.width}};" id="mychart-two" canvas-id="mychart-two"
+          ec="{{ twoEchart }}"></ec-canvas>
+        <ec-canvas wx:else force-use-old-canvas="{{false}}"
+          style="height: {{deviceStyle.height}};width:{{deviceStyle.width}};" id="mychart-two" canvas-id="mychart-two"
+          ec="{{ twoEchart }}"></ec-canvas>
+      </view>
+    </view>
+  </view>
+  <view class="header_container">
+    <view class="header_module">
+      <view class="header_title">顾客分析</view>
+      <view class="header_list">
+        <ec-canvas wx:if="{{deviceOrientation}}" force-use-old-canvas="{{false}}"
+          style="height: {{deviceStyle.height}};width:{{deviceStyle.width}};" id="mychart-thr" canvas-id="mychart-thr"
+          ec="{{ thrEchart }}"></ec-canvas>
+        <ec-canvas wx:else force-use-old-canvas="{{false}}"
+          style="height: {{deviceStyle.height}};width:{{deviceStyle.width}};" id="mychart-thr" canvas-id="mychart-thr"
+          ec="{{ thrEchart }}"></ec-canvas>
+      </view>
+    </view>
+  </view>
+  <view class="header_container">
+    <view class="header_module">
+      <view class="header_title">套餐分析</view>
+      <view class="header_list">
+        <ec-canvas wx:if="{{deviceOrientation}}" force-use-old-canvas="{{false}}"
+          style="height: {{deviceStyle.height}};width:{{deviceStyle.width}};" id="mychart-four" canvas-id="mychart-four"
+          ec="{{ fourEchart }}"></ec-canvas>
+        <ec-canvas wx:else force-use-old-canvas="{{false}}"
+          style="height: {{deviceStyle.height}};width:{{deviceStyle.width}};" id="mychart-four" canvas-id="mychart-four"
+          ec="{{ fourEchart }}"></ec-canvas>
+      </view>
+    </view>
+  </view>
+  <view class="header_container">
+    <view class="header_module">
+      <view class="header_title">运营商分析</view>
+      <view class="header_list">
+        <ec-canvas wx:if="{{deviceOrientation}}" force-use-old-canvas="{{false}}"
+          style="height: {{deviceStyle.height}};width:{{deviceStyle.width}};" id="mychart-five" canvas-id="mychart-five"
+          ec="{{ fiveEchart }}"></ec-canvas>
+        <ec-canvas wx:else force-use-old-canvas="{{false}}"
+          style="height: {{deviceStyle.height}};width:{{deviceStyle.width}};" id="mychart-five" canvas-id="mychart-five"
+          ec="{{ fiveEchart }}"></ec-canvas>
+      </view>
+    </view>
+  </view>
+</view>

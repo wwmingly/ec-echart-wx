@@ -1,0 +1,54 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my-partner/index",
+          "pathName": "pages/my-partner/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my-partner-add/index",
+          "pathName": "pages/my-partner-add/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/equip-allocation/index",
+          "pathName": "pages/equip-allocation/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pay-record/index",
+          "pathName": "pages/pay-record/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/conduct-report/index",
+          "pathName": "pages/conduct-report/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

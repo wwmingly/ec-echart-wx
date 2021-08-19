@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/conduct-report/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "图表",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

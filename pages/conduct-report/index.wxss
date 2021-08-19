@@ -1,0 +1,117 @@
+.report_container {
+  width: 100%;
+  background-color: #efefef;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.report_tab {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 24rpx;
+  height: 90rpx;
+  border-top: 1px solid #efefef;
+}
+
+.report_group {
+  display: flex;
+  line-height: 90rpx;
+}
+
+.report_group .btn {
+  padding: 0 24rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  border-bottom: 6rpx solid transparent;
+}
+
+.report_group .active {
+  border-bottom: 6rpx solid rgba(52, 165, 205, 1);
+  color: rgba(52, 165, 205, 1);
+  font-weight: bold;
+}
+
+.report_time {
+  display: flex;
+  align-items: center;
+}
+
+.report_time text {
+  color: rgba(52, 165, 205, 1);
+}
+
+.report_time .icon {
+  height: 24rpx;
+  width: 24rpx;
+  margin-left: 12px;
+}
+
+
+
+.header_container {
+  box-sizing: border-box;
+  padding: 24rpx;
+}
+
+.header_module {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+.header_title {
+  box-sizing: border-box;
+  padding: 0 24rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_item {
+  width: 50%;
+  height: 180rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header_icon_right {
+  position: absolute;
+  top: 50%;
+  right: 20rpx;
+  height: 30rpx;
+  width: 30rpx;
+  margin-top: -15rpx;
+}
+
+.border_left {
+  border-left: 2rpx solid #eee;
+}
+
+.border_bottom {
+  border-bottom: 2rpx solid #eee;
+}
+
+.header_label {
+  line-height: 80rpx;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.header_count {
+  font-size: 28rpx;
+  color: #999;
+}
